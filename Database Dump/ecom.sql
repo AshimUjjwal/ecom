@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2019 at 02:25 PM
+-- Generation Time: Jun 10, 2019 at 06:48 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -39,7 +39,11 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 (1, 'KIDS'),
-(2, 'ADULTS');
+(2, 'ADULTS'),
+(3, 'CLOTHES'),
+(4, 'ELECTRONICS DEVICES'),
+(5, 'FRUITS'),
+(6, 'SHOES');
 
 -- --------------------------------------------------------
 
@@ -77,8 +81,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_title`, `product_category_id`, `product_price`, `product_quantity`, `product_description`, `short_desc`, `product_image`) VALUES
-(1, 'THE JUNGLE', 1, 54, 68, 'STORY BOOK', 'LONG KID STORY BOOK', '8850_4988.jpg'),
-(2, 'GANESH', 2, 4, 5, 'god picture', 'pic', '139447529-89117213-1529918536.jpg');
+(3, 'CONVERSE', 6, 54, 78, 'its a sneaker.Available in all sizes.Comfortable to wear.', 'A very limited edition.', 'TC3._CB500833682_.jpg');
 
 -- --------------------------------------------------------
 
@@ -119,9 +122,9 @@ CREATE TABLE `slides` (
 --
 
 INSERT INTO `slides` (`slide_id`, `slide_title`, `slide_image`) VALUES
-(42, 'q', '694adf17-bc5d-4a49-b8e3-a1e38664766c.jpg'),
-(45, 'tyu', 'A-Positive-attitude.jpg'),
-(46, 'cv', 'go-together-copy-paste-facebook-covers-1114.jpg');
+(48, 'fruits', 'inner-banner1.jpg'),
+(50, '3', 'inner-banner2.jpg'),
+(51, '4', 'inner-banner3.jpg');
 
 -- --------------------------------------------------------
 
@@ -192,7 +195,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -204,7 +207,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `reports`
@@ -216,7 +219,7 @@ ALTER TABLE `reports`
 -- AUTO_INCREMENT for table `slides`
 --
 ALTER TABLE `slides`
-  MODIFY `slide_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `slide_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `users`
