@@ -120,13 +120,13 @@ eod;
 
                  echo $product;
 				 
-				 $item_name ++;
+				 $item_name++;
 				 
-				 $item_number ++;
+				 $item_number++;
 				 
-				 $amount ++;
+				 $amount++;
 				 
-				 $quantity ++;
+				 $quantity++;
 					
 				}
 				
@@ -151,9 +151,11 @@ if(isset($_SESSION['item_quantity']) && $_SESSION['item_quantity'] > 0)
 	{
 		
 		
-			$paypal_button = <<<danger
+$paypal_button = <<<danger
 	
-	                  <input type="image" name="upload" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
+<input type="image" name="upload"
+src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+alt="PayPal - The safer, easier way to pay online">
 					  
 danger;
 
