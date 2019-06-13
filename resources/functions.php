@@ -706,7 +706,7 @@ function add_user()
 	if(isset($_POST['add_user']))
 	{
 		
-		$username = escape_string($_POST['username']);
+		$username  = escape_string($_POST['username']);
 		
 		$email    = escape_string($_POST['email']);
 		

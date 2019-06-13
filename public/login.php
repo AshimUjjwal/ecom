@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="form-group">
-                  <input type="submit" name="submit" class="btn btn-primary"  Value = "Log In">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../resources/templates/back/add_user.php" class="btn btn-primary" pull-right>Add User</a>
+                  <input type="submit" name="submit" class="btn btn-primary"  Value = "Log In">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../resources/add_users.php" class="btn btn-primary" pull-right>Add User</a>
                 </div>
             </form>
         </div>  
